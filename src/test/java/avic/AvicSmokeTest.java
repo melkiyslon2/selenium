@@ -35,44 +35,6 @@ public class AvicSmokeTest {
     driver.get("https://avic.ua/");
     }
 
-   /* @Test(priority = 1)
-    public void checkWebUrlContainsSearchWord(){
-        driver.findElement(By.xpath("//input[@id='input_search']")).sendKeys("iPhone 11");
-        driver.findElement(By.xpath("//button[@class='button-reset search-btn']")).click();
-        assertTrue(driver.getCurrentUrl().contains("query=iPhone+11"));
-    }
-
-    @Test(priority = 2)
-    public void checkAmountOnPage(){
-        driver.findElement(By.xpath("//input[@id='input_search']")).sendKeys("iPhone 11");
-        driver.findElement(By.xpath("//button[@class='button-reset search-btn']")).click();
-        List<WebElement> elementsList = driver.findElements(By.xpath("//div[@class='item-prod col-lg-3']"));
-        assertEquals(elementsList.size(),12);
-    }
-
-    @Test(priority = 3)
-    public void checkEveryElementContainsWord(){
-        driver.findElement(By.xpath("//input[@id='input_search']")).sendKeys("iPhone 11");
-        driver.findElement(By.xpath("//button[@class='button-reset search-btn']")).click();
-        List<WebElement> elementsList = driver.findElements(By.xpath("//div[@class='item-prod col-lg-3']"));
-        for (WebElement element: elementsList){
-            assertTrue(element.getText().contains("iPhone 11"));
-        }
-    }
-
-    @Test(priority = 4)
-    public void checkCart(){
-        driver.findElement(By.xpath("//span[@class='sidebar-item']")).click();
-        driver.findElement(By.xpath("//span[contains(text(),'Apple Store')]")).click();
-        driver.findElement(By.xpath("//div[@class='brand-box__title']//a[contains(text(),'iPhone')]")).click();
-        driver.findElement(By.xpath("//a[contains(@data-ecomm-cart,'Смартфон Apple iPhone 11 64GB Slim Box White (MHDC3)')]")).click();
-        WebDriverWait wait = new WebDriverWait(driver,3000);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("js_cart")));
-        driver.findElement(By.xpath("//a[contains(text(),'Продолжить покупки')]")).click();
-        String checkCart = driver.findElement(By.xpath("//div[contains(@class,'header-bottom__cart')]//div[contains(@class,'cart_count')]")).getText();
-        assertEquals(checkCart,"1");
-    }*/
-
     @Test(priority = 1)
     public void iphoneInMoneyRange(){
         driver.findElement(By.xpath("//span[@class='sidebar-item']")).click();
